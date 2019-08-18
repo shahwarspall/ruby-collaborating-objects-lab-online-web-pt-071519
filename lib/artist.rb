@@ -14,7 +14,7 @@ class Artist
     @@all
   end 
   
-  def songs 
+  def songs
     Song.all.select do |song|
       song.artist == self
     end
@@ -40,4 +40,9 @@ class Artist
       @@all.find { |artist| artist.name == name}
     end
   
+  def print_songs
+    song.each do |song|
+      puts song.name
+  end 
+end
 end 
