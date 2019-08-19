@@ -23,7 +23,7 @@ end
     
     song_title = file_name.split(" - ")
     song = Song.new(data[1])
-    song.artist_name = data[0]
+    song.artist.name = data[0]
     song 
   end
     
